@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .box{
+
+            width: 40%;
+            margin: auto;
+            border: 1px solid black;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        button{
+
+            padding: 8px 8px;
+            margin: 5px 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box" id="mybox">
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit beatae fugit voluptas veritatis amet, voluptatem sequi eos distinctio quo, magni quos ad ipsum? Voluptatibus saepe eveniet fugiat tempore unde?
+       </p>
+       <button id="uppercase">uppercase</button>
+       <button id="lowercase">lowercasecase</button>
+       <button id="inc">+</button>
+       <button id="dec">-</button>
+       <input type="color" id="color">
+       <input type="range">
+    </div>
+
+
+    <script>
+
+        let counter = 0;
+        
+        document.getElementById("color").oninput = function(){
+            
+            let color = document.getElementById("color").value;
+            console.log(color) 
+            document.getElementById("mybox").style.backgroundColor = color;
+        }
+
+    </script>
+    
+</body>
+</html>

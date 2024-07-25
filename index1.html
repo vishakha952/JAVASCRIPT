@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #yellow{
+            height:80px;
+            width:20%;
+            background-color:yellow;
+            margin-top:10px;
+        }
+        #red{
+            height:80px;
+            width:20%;
+            background-color:red;
+            margin-top:10px;
+        }
+        #blue{
+            height:80px;
+            width:20%;
+            background-color:blue;
+            margin-top:10px;
+        }
+        #green{
+            height:80px;
+            width:20%;
+            background-color:green;
+            margin-top:10px;
+        }
+
+    </style>
+</head>
+<body id="bo">
+    <div class="color" id="yellow"></div>
+    <div class="color" id="red"></div>
+    <div class="color" id="blue"></div>
+    <div class="color" id="green"></div>
+   <button id="btn">submit</button>
+    <script>
+        document.getElementById("yellow").onclick=function(){
+            document.getElementById("bo").style.background="yellow";
+        }
+        document.getElementById("yellow").onclick=function(){
+            document.getElementById("bo").style.background="red";
+        }
+        document.getElementById("yellow").onclick=function(){
+            document.getElementById("bo").style.background="blue";
+        }
+        document.getElementById("yellow").onclick=function(){
+            document.getElementById("bo").style.background="green";
+        }
+       document.getElementById("btn").onclick = function(){
+           console.log("hello java script")
+          alert("hey java script")
+        }
+    </script>
+</body>
+</html>

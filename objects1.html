@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let obj ={
+         //   rollno:1001,
+          //  name:"vishakha",
+           // email:"vishakha@gmail.com",
+           // age:19,
+          //  city:"jaipur",
+          //skills:["c","c++"],
+          //fullname:function(){
+          //console.log(this.fname,this.lname)
+          //console.log(this)
+        //},
+       // marks:{
+          //  "p":85,
+          //  "c":40,
+          //  m:90
+        //}
+
+        //}
+//console.log(obj.fname)
+//console.log(obj.fullname())
+       // console.log(obj)
+        //console.log(obj.name)
+       // console.log(obj.age)
+       // console.log(obj.city)
+       // console.log(obj["email"])
+       //console.log(obj.name,obj.age)
+       //for(let i in obj){
+       // console.log(i,obj[i])
+       //}
+       //array of object
+       let obj=[
+       {
+            rollno:1001,
+            name:"vishakha",
+            email:"vishakha@gmail.com",
+            age:18,
+            city:"jaipur"
+        },
+        {
+            rollno:1002,
+            name:"diya",
+            email:"diya@gmail.com",
+            age:22,
+            city:"jaipur"
+        },
+        {
+            rollno:1003,
+            name:"uttam",
+            email:"uttam@gmail.com",
+            age:18,
+            city:"alwar"
+        },
+        {
+            rollno:1004,
+            name:"palak",
+            email:"palak@gmail.com",
+            age:20,
+            city:"goa"
+        },
+        {
+            rollno:1005,
+            name:"aura",
+            email:"aura@gmail.com",
+            age:21,
+            city:"kota"
+        }
+    ]
+    //console.log(obj)
+
+    let b=obj.filter((item)=>item.age>18);
+    console.log(b);
+    for(let i in obj){
+        if(obj[i].age>18){
+            //console.log(obj[i],name);
+            console.log(obj[i]);
+        }
+    }
+    </script>
+</body>
+</html>

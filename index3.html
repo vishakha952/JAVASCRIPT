@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+
+            height: 50px;
+            width: 50px;
+            /* border: 2px solid black; */
+            border-radius: 200px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #red{
+            background-color: red;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #green{
+            background-color: green;
+        }
+        #black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body id="bo">
+
+
+    <div class="color" id="red"></div>
+    <div class="color" id="yellow"></div>
+    <div class="color" id="green"></div>
+    <div class="color" id="black"></div>
+<!-- 
+    <button id="btn">Submit</button> -->
+
+
+    <script>
+
+        document.getElementById("red").onclick = function(){
+              
+            document.getElementById("bo").style.backgroundColor = "Red"
+        }
+
+        // document.getElementById("btn").onclick = function(){
+
+        //     console.log("Hello Java Script")
+        //     alert("Hey java Script")
+        // }
+
+    </script>
+    
+</body>
+</html>

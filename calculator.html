@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing:border-box;
+        }
+.btn{
+    width:10%;
+    height:40px;
+    margin-top:23px;
+    margin-left:10px;
+}
+.container{
+    
+    height:350px;
+    width:30%;
+   background-color:aqua;
+   position: relative;
+   border-style: solid;
+  border-color: white;
+   border-radius:20px;
+    
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:150px;
+
+}
+h1{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+
+}
+.main{
+    width:95%;
+    height:40px;
+    margin-left:12px;
+}
+.main2{
+    width:40%;
+    height:50%;
+    background-color:red;
+    position: absolute;
+    top: 38%;
+    left: 57%;
+}
+img{
+    width:100%;
+    height:100%;
+    margin-bottom:900px;
+}
+.btn:hover{
+    background-color:red;
+}
+@media (min-width:375px) and (max-width:550px){
+
+.container{
+    width:100%;
+}
+}
+@media (min-width:551px) and (max-width:750px){
+
+.container{
+    width:75%;
+}
+}
+@media (min-width:751px) and (max-width:1000px){
+
+.container{
+    width:55%;
+}
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1 >Calculator</h1>
+        <form action="">
+            <input type="text"class="main"><br>
+            <input class="btn" type="button" value="7">
+            <input class="btn" type="button" value="8">
+            <input class="btn" type="button" value="9">
+            <input class="btn" type="button" value="+"><br>
+            <input class="btn" type="button" value="4">
+            <input class="btn" type="button" value="5">
+            <input class="btn" type="button" value="6">
+            <input class="btn" type="button" value="-"><br>
+            <input class="btn" type="button" value="1">
+            <input class="btn" type="button" value="2">
+            <input class="btn" type="button" value="3">
+            <input class="btn" type="button" value="x"><br>
+            <input class="btn" type="button" value="C">
+            <input class="btn" type="button" value="0">
+            <input class="btn" type="button" value="=">
+            <input class="btn" type="button" value="/">
+        </form>
+        <div class="main2">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi_-dgDKFRS7c2pwVi5r6g6BOJGsrUgc0y2Q&s">
+    
+        </div>
+    </div>
+    <script>
+        let btn =document.querySelectorAll("input");
+        btn.forEach((item)=>{
+            item.onclick=function(){
+                console.log(item.value)
+            }
+        })
+    </script>
+</body>
+</html>
